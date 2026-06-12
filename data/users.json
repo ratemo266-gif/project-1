@@ -1,12 +1,12 @@
 {
-  "6dcab3": {
+  "abdf96": {
     "name": "admin",
     "email": "admin@example.com",
     "role": "admin",
     "user_id": "99327d",
     "projects": []
   },
-  "810ac3": {
+  "8bf638": {
     "name": "Sarah Johnson",
     "email": "sarah.johnson@techcorp.com",
     "role": "admin",
@@ -17,7 +17,7 @@
       "79d5bf"
     ]
   },
-  "b4bc66": {
+  "0eb5e6": {
     "name": "Mike Chen",
     "email": "mike.chen@techcorp.com",
     "role": "manager",
@@ -27,7 +27,7 @@
       "64db16"
     ]
   },
-  "f6b79e": {
+  "514a81": {
     "name": "Emma Rodriguez",
     "email": "emma.rodriguez@techcorp.com",
     "role": "manager",
@@ -37,7 +37,7 @@
       "9e0ab8"
     ]
   },
-  "dc81f6": {
+  "b6f9e3": {
     "name": "Alex Kim",
     "email": "alex.kim@techcorp.com",
     "role": "contributor",
@@ -47,7 +47,7 @@
       "38f1cc"
     ]
   },
-  "1c8dbb": {
+  "9a7efd": {
     "name": "Lisa Wong",
     "email": "lisa.wong@techcorp.com",
     "role": "contributor",
@@ -56,13 +56,72 @@
       "9b8667"
     ]
   },
-  "0ee8de": {
+  "c7ca24": {
     "name": "David Patel",
     "email": "david.patel@techcorp.com",
     "role": "contributor",
     "user_id": "0ee8de",
     "projects": [
       "64db16"
+    ]
+  },
+  "8a6348": {
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@techcorp.com",
+    "role": "admin",
+    "user_id": "8a6348",
+    "projects": [
+      "106476",
+      "713857",
+      "db3279"
+    ]
+  },
+  "4774cb": {
+    "name": "Mike Chen",
+    "email": "mike.chen@techcorp.com",
+    "role": "manager",
+    "user_id": "4774cb",
+    "projects": [
+      "106c0a",
+      "02149e"
+    ]
+  },
+  "b3621b": {
+    "name": "Emma Rodriguez",
+    "email": "emma.rodriguez@techcorp.com",
+    "role": "manager",
+    "user_id": "b3621b",
+    "projects": [
+      "02149e",
+      "106476"
+    ]
+  },
+  "f04ec1": {
+    "name": "Alex Kim",
+    "email": "alex.kim@techcorp.com",
+    "role": "contributor",
+    "user_id": "f04ec1",
+    "projects": [
+      "106476",
+      "713857"
+    ]
+  },
+  "4bd03a": {
+    "name": "Lisa Wong",
+    "email": "lisa.wong@techcorp.com",
+    "role": "contributor",
+    "user_id": "4bd03a",
+    "projects": [
+      "106c0a"
+    ]
+  },
+  "726634": {
+    "name": "David Patel",
+    "email": "david.patel@techcorp.com",
+    "role": "contributor",
+    "user_id": "726634",
+    "projects": [
+      "02149e"
     ]
   }
 }

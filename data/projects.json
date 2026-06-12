@@ -1,5 +1,5 @@
 {
-  "9e0ab8": {
+  "58d035": {
     "title": "Company Website Redesign",
     "description": "Complete overhaul of company website with new branding",
     "due_date": "2025-03-15",
@@ -32,7 +32,7 @@
       }
     ]
   },
-  "38f1cc": {
+  "624d9a": {
     "title": "Mobile App Development",
     "description": "iOS and Android app for customer portal",
     "due_date": "2025-05-01",
@@ -59,7 +59,7 @@
       }
     ]
   },
-  "9b8667": {
+  "d4360e": {
     "title": "Database Migration",
     "description": "Move from on-premise to cloud database",
     "due_date": "2025-02-28",
@@ -86,7 +86,7 @@
       }
     ]
   },
-  "64db16": {
+  "c6532f": {
     "title": "REST API Development",
     "description": "Build public API for third-party integrations",
     "due_date": "2025-04-20",
@@ -113,7 +113,7 @@
       }
     ]
   },
-  "79d5bf": {
+  "c12b02": {
     "title": "Security Audit",
     "description": "Annual security compliance and penetration testing",
     "due_date": "2025-01-30",
@@ -131,6 +131,141 @@
         "status": "pending",
         "assigned_to": "0ee8de",
         "task_id": "08047e"
+      }
+    ]
+  },
+  "106476": {
+    "title": "Company Website Redesign",
+    "description": "Complete overhaul of company website with new branding",
+    "due_date": "2025-03-15",
+    "owner_id": "8a6348",
+    "project_id": "106476",
+    "tasks": [
+      {
+        "title": "Design homepage mockups",
+        "status": "pending",
+        "assigned_to": "f04ec1",
+        "task_id": "7b4060"
+      },
+      {
+        "title": "Create responsive navigation",
+        "status": "pending",
+        "assigned_to": "f04ec1",
+        "task_id": "030dd3"
+      },
+      {
+        "title": "Write content for about page",
+        "status": "completed",
+        "assigned_to": "4bd03a",
+        "task_id": "30a9ee"
+      },
+      {
+        "title": "Set up analytics tracking",
+        "status": "pending",
+        "assigned_to": "726634",
+        "task_id": "c6bce4"
+      }
+    ]
+  },
+  "713857": {
+    "title": "Mobile App Development",
+    "description": "iOS and Android app for customer portal",
+    "due_date": "2025-05-01",
+    "owner_id": "8a6348",
+    "project_id": "713857",
+    "tasks": [
+      {
+        "title": "User authentication system",
+        "status": "in_progress",
+        "assigned_to": "f04ec1",
+        "task_id": "4b31b7"
+      },
+      {
+        "title": "Push notifications setup",
+        "status": "pending",
+        "assigned_to": "b3621b",
+        "task_id": "bc9d78"
+      },
+      {
+        "title": "App store submission",
+        "status": "pending",
+        "assigned_to": "8a6348",
+        "task_id": "a70bf7"
+      }
+    ]
+  },
+  "106c0a": {
+    "title": "Database Migration",
+    "description": "Move from on-premise to cloud database",
+    "due_date": "2025-02-28",
+    "owner_id": "4774cb",
+    "project_id": "106c0a",
+    "tasks": [
+      {
+        "title": "Backup all data",
+        "status": "completed",
+        "assigned_to": "4774cb",
+        "task_id": "4be407"
+      },
+      {
+        "title": "Test migration script",
+        "status": "pending",
+        "assigned_to": "4bd03a",
+        "task_id": "2d9c09"
+      },
+      {
+        "title": "Update connection strings",
+        "status": "pending",
+        "assigned_to": "4774cb",
+        "task_id": "23f47c"
+      }
+    ]
+  },
+  "02149e": {
+    "title": "REST API Development",
+    "description": "Build public API for third-party integrations",
+    "due_date": "2025-04-20",
+    "owner_id": "b3621b",
+    "project_id": "02149e",
+    "tasks": [
+      {
+        "title": "Design API endpoints",
+        "status": "completed",
+        "assigned_to": "b3621b",
+        "task_id": "33bad3"
+      },
+      {
+        "title": "Write API documentation",
+        "status": "pending",
+        "assigned_to": "726634",
+        "task_id": "938574"
+      },
+      {
+        "title": "Rate limiting implementation",
+        "status": "pending",
+        "assigned_to": "4774cb",
+        "task_id": "3b2216"
+      }
+    ]
+  },
+  "db3279": {
+    "title": "Security Audit",
+    "description": "Annual security compliance and penetration testing",
+    "due_date": "2025-01-30",
+    "owner_id": "8a6348",
+    "project_id": "db3279",
+    "tasks": [
+      {
+        "title": "Vulnerability scanning",
+        "status": "completed",
+        "assigned_to": "8a6348",
+        "task_id": "3bd163"
+      },
+      {
+        "title": "Penetration testing",
+        "status": "pending",
+        "assigned_to": "726634",
+        "task_id": "a837d4"
       }
     ]
   }
