@@ -1,53 +1,30 @@
+
 from models import User, Project, Task
 from storage import save_all, load_all
-
+# Prefer the real tabulate package; if unavailable provide a minimal fallback.
 try:
-    import importlib
-    _tab_mod = importlib.import_module("tabulate")
-    tabulate = _tab_mod.tabulate
+    from tabulate import tabulate  # type: ignore
 except Exception:
-    # Minimal fallback for tabulate to avoid external dependency.
     def tabulate(table, headers=None):
-        rows = []
-        if headers:
-            rows.append([str(h) for h in headers])
-        rows.extend([[str(c) for c in row] for row in table])
-        if not rows:
-            return ""
-        cols = len(rows[0])
-        widths = [0] * cols
-        for r in rows:
-            for i in range(cols):
-                widths[i] = max(widths[i], len(r[i]) if i < len(r) else 0)
+        # Minimal fallback: simple column separator, suitable for small CLI output
         lines = []
         if headers:
-            header = " | ".join((headers[i] if i < len(headers) else "").ljust(widths[i]) for i in range(cols))
-            sep = "-+-".join("-" * widths[i] for i in range(cols))
-            lines.append(header)
-            lines.append(sep)
-            for row in table:
-                lines.append(" | ".join((str(row[i]) if i < len(row) else "").ljust(widths[i]) for i in range(cols)))
-        else:
-            for row in table:
-                lines.append(" | ".join((str(row[i]) if i < len(row) else "").ljust(widths[i]) for i in range(cols)))
+            lines.append(" | ".join(headers))
+            lines.append("-" * len(lines[0]))
+        for row in table:
+            lines.append(" | ".join(str(c) for c in row))
         return "\n".join(lines)
 
 class CLI:
     def __init__(self):
         load_all()
         self.current_user = None
-        
         self.load_example_data()
-        
+    
     def load_example_data(self):
         print("Welcome to Project Manager CLI")
         print("Type 'help' for commands, 'exit' to quit")
         
-        if len(User.all_users) == 0:
-            User("admin", "admin@example.com", "admin")
-            save_all()
-            print("Default admin created: username 'admin'")
-      
         
         sarah = User("Sarah Johnson", "sarah.johnson@techcorp.com", "admin")
         mike = User("Mike Chen", "mike.chen@techcorp.com", "manager")
@@ -175,16 +152,16 @@ class CLI:
         print("\n=== COMMANDS ===")
         print("login <name>                    - Login as user")
         print("logout                          - Logout")
-        print("add-user <name> <email> <role>  - Add new user (admin)")
-        print("list-users                      - Show all users (admin)")
+        print("add-user <name> <email> <role>  - Add new user (any logged in user)")
+        print("list-users                      - Show all users (any logged in user)")
         print("add-project <title> <desc> <due> - Create project")
         print("list-projects                   - Show all projects")
-        print("assign-project <user> <proj_id> - Assign project (admin)")
+        print("assign-project <user> <proj_id> - Assign project to user (any logged in user)")
         print("add-task <proj_id> <title>      - Add task to project")
         print("list-tasks <proj_id>            - Show tasks in project")
         print("complete-task <task_id>         - Mark task complete")
-        print("my-projects                     - Your projects")
-        print("my-tasks                        - Your tasks")
+        print("my-projects                     - Show projects assigned to you")
+        print("my-tasks                        - Show tasks assigned to you")
         print("user-projects <name>            - Show user's projects")
         print("help                            - This menu")
         print("exit                            - Quit\n")
@@ -207,8 +184,9 @@ class CLI:
         print("Logged out")
     
     def add_user(self, cmd):
-        if not self.current_user or self.current_user.role != "admin":
-            print("Admin access required")
+        # REMOVED: if not self.current_user or self.current_user.role != "admin":
+        if not self.current_user:
+            print("Login required")
             return
         parts = cmd.split()
         if len(parts) != 4:
@@ -227,8 +205,9 @@ class CLI:
         print(f"User '{name}' created with ID: {user.user_id}")
     
     def list_users(self):
-        if not self.current_user or self.current_user.role != "admin":
-            print("Admin access required")
+        # REMOVED: if not self.current_user or self.current_user.role != "admin":
+        if not self.current_user:
+            print("Login required")
             return
         if not User.all_users:
             print("No users found")
@@ -268,8 +247,9 @@ class CLI:
         print(tabulate(table, headers=["Title", "Owner", "Tasks", "Done", "Due", "ID"]))
     
     def assign_project(self, cmd):
-        if not self.current_user or self.current_user.role != "admin":
-            print("Admin access required")
+        # REMOVED: if not self.current_user or self.current_user.role != "admin":
+        if not self.current_user:
+            print("Login required")
             return
         parts = cmd.split()
         if len(parts) != 3:
