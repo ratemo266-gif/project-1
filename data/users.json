@@ -1,127 +1,44 @@
 {
-  "abdf96": {
-    "name": "admin",
-    "email": "admin@example.com",
-    "role": "admin",
-    "user_id": "99327d",
-    "projects": []
-  },
-  "8bf638": {
+  "b7f3d2": {
     "name": "Sarah Johnson",
     "email": "sarah.johnson@techcorp.com",
     "role": "admin",
-    "user_id": "810ac3",
-    "projects": [
-      "9e0ab8",
-      "38f1cc",
-      "79d5bf"
-    ]
+    "user_id": "b7f3d2",
+    "projects": ["a1b2c3", "d4e5f6", "m3n4o5"]
   },
-  "0eb5e6": {
+  "a4e8c1": {
     "name": "Mike Chen",
     "email": "mike.chen@techcorp.com",
     "role": "manager",
-    "user_id": "b4bc66",
-    "projects": [
-      "9b8667",
-      "64db16"
-    ]
+    "user_id": "a4e8c1",
+    "projects": ["g7h8i9", "j0k1l2"]
   },
-  "514a81": {
+  "f9a2b5": {
     "name": "Emma Rodriguez",
     "email": "emma.rodriguez@techcorp.com",
     "role": "manager",
-    "user_id": "f6b79e",
-    "projects": [
-      "64db16",
-      "9e0ab8"
-    ]
+    "user_id": "f9a2b5",
+    "projects": ["j0k1l2", "a1b2c3"]
   },
-  "b6f9e3": {
+  "d1c6e3": {
     "name": "Alex Kim",
     "email": "alex.kim@techcorp.com",
     "role": "contributor",
-    "user_id": "dc81f6",
-    "projects": [
-      "9e0ab8",
-      "38f1cc"
-    ]
+    "user_id": "d1c6e3",
+    "projects": ["a1b2c3", "d4e5f6"]
   },
-  "9a7efd": {
+  "h7b4f9": {
     "name": "Lisa Wong",
     "email": "lisa.wong@techcorp.com",
     "role": "contributor",
-    "user_id": "1c8dbb",
-    "projects": [
-      "9b8667"
-    ]
+    "user_id": "h7b4f9",
+    "projects": ["g7h8i9"]
   },
-  "c7ca24": {
+  "k2m8n4": {
     "name": "David Patel",
     "email": "david.patel@techcorp.com",
     "role": "contributor",
-    "user_id": "0ee8de",
-    "projects": [
-      "64db16"
-    ]
-  },
-  "8a6348": {
-    "name": "Sarah Johnson",
-    "email": "sarah.johnson@techcorp.com",
-    "role": "admin",
-    "user_id": "8a6348",
-    "projects": [
-      "106476",
-      "713857",
-      "db3279"
-    ]
-  },
-  "4774cb": {
-    "name": "Mike Chen",
-    "email": "mike.chen@techcorp.com",
-    "role": "manager",
-    "user_id": "4774cb",
-    "projects": [
-      "106c0a",
-      "02149e"
-    ]
-  },
-  "b3621b": {
-    "name": "Emma Rodriguez",
-    "email": "emma.rodriguez@techcorp.com",
-    "role": "manager",
-    "user_id": "b3621b",
-    "projects": [
-      "02149e",
-      "106476"
-    ]
-  },
-  "f04ec1": {
-    "name": "Alex Kim",
-    "email": "alex.kim@techcorp.com",
-    "role": "contributor",
-    "user_id": "f04ec1",
-    "projects": [
-      "106476",
-      "713857"
-    ]
-  },
-  "4bd03a": {
-    "name": "Lisa Wong",
-    "email": "lisa.wong@techcorp.com",
-    "role": "contributor",
-    "user_id": "4bd03a",
-    "projects": [
-      "106c0a"
-    ]
-  },
-  "726634": {
-    "name": "David Patel",
-    "email": "david.patel@techcorp.com",
-    "role": "contributor",
-    "user_id": "726634",
-    "projects": [
-      "02149e"
-    ]
+    "user_id": "k2m8n4",
+    "projects": ["j0k1l2", "m3n4o5"]
   }
 }
